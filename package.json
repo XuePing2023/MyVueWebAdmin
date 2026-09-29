@@ -1,0 +1,38 @@
+{
+  "name": "web-admin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "基于 Vue3 + TypeScript + Vite + UnoCSS + shadcn/ui 的后台管理系统",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "@vueuse/core": "^15.0.0",
+    "axios": "^1.20.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "echarts": "^6.1.0",
+    "lucide-vue-next": "^0.577.0",
+    "pinia": "^4.0.3",
+    "reka-ui": "^2.10.5",
+    "tailwind-merge": "^3.7.0",
+    "vue": "^3.5.43",
+    "vue-router": "^5.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@unocss/reset": "^66.10.5",
+    "@vitejs/plugin-vue": "^6.0.9",
+    "typescript": "~5.9.0",
+    "unocss": "^66.10.5",
+    "vite": "^8.3.1",
+    "vue-tsc": "^3.3.11"
+  }
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WebAdmin - 基于 Vue3 + TypeScript + UnoCSS + shadcn/ui 的后台管理系统" />
+    <title>WebAdmin 后台管理系统</title>
+    <script>
+      // 初始化主题，避免暗黑模式闪屏（与 @vueuse/core useDark 存储键保持一致）
+      ;(function () {
+        try {
+          var raw = localStorage.getItem('vueuse-color-scheme')
+          var scheme = raw ? raw.replace(/"/g, '') : 'auto'
+          var dark = scheme === 'dark' || (scheme !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          if (dark) document.documentElement.classList.add('dark')
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

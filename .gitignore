@@ -1,0 +1,21 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+# 本地便携运行时
+.tools
+
+# 编辑器
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志
+logs
+*.log
+npm-debug.log*
